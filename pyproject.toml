@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "temporal-common-sense"
+version = "0.1.0"
+description = "Test how much temporal common sense RoBERTa has learned during pre-training"
+license = "GPL-3.0-or-later"
+authors = ["Tai Mai"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "2.0.0"
+transformers = "^4.35.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
