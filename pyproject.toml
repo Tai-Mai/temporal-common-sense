@@ -9,8 +9,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 torch = "2.0.0"
-evaluate = "^0.4.1"
+evaluate = {extras = ["template"], version = "^0.4.1"}
 transformers = "^4.35.2"
+icecream = "^2.1.3"
 
 
 [build-system]
