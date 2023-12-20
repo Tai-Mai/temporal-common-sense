@@ -1,0 +1,87 @@
+{
+  "Equals": [
+    "A and B have identical boundaries in time.",
+    "The time span covered by A is the same as the one covered by B.",
+    "The start and end times of A align perfectly with those of B.",
+    "A and B represent time intervals that are indistinguishable.",
+    "The duration of A matches exactly with the duration of B.",
+    "The temporal boundaries of A perfectly match those of B.",
+    "A and B cover the same time span without any difference.",
+    "A and B coincide precisely in terms of start and end times.",
+    "A and B denote time intervals that are exactly the same.",
+    "The duration of A corresponds exactly to the duration of B."
+  ],
+  "Before": [
+    "A concludes prior to the initiation of B.",
+    "B starts after the conclusion of A.",
+    "A is entirely anterior to the time period of B.",
+    "The start time of B succeeds the end time of A.",
+    "B commences later than the conclusion of A.",
+    "A concludes well before B initiates its time span.",
+    "B starts after A has completed its duration.",
+    "A precedes B entirely in the temporal dimension.",
+    "The initiation of B occurs after the conclusion of A.",
+    "The commencement of B is later than the conclusion of A."
+  ],
+  "Meets": [
+    "A ends just before the commencement of B.",
+    "The end time of A meets the start time of B.",
+    "A concludes immediately before the beginning of B.",
+    "There is no gap between the conclusion of A and the commencement of B.",
+    "B commences right after the conclusion of A.",
+    "A concludes just as B commences.",
+    "The ending time of A coincides with the starting time of B.",
+    "A finishes right before B begins.",
+    "There is a seamless transition from the end of A to the start of B.",
+    "B starts immediately after A finishes."
+  ],
+  "Overlaps": [
+    "A and B share a common section of their time durations.",
+    "There exists a period of overlap between A and B.",
+    "A partially coincides with the time span of B.",
+    "A has a segment of time that is concurrent with the time span of B.",
+    "The time span of A extends beyond the start or end of B.",
+    "A and B share a common segment in their time durations.",
+    "There is an intersection between the durations of A and B.",
+    "A partially coincides with, but does not entirely overlap, B.",
+    "A has a portion of its time span concurrent with a segment of B.",
+    "The time span of A extends beyond either the start or end of B."
+  ],
+  "During": [
+    "B encompasses the entirety of A.",
+    "A occurs entirely within the temporal extent of B.",
+    "The entire duration of A takes place within the duration of B.",
+    "A is completely contained within the time period of B.",
+    "The start and end times of B fully envelop those of A.",
+    "B entirely encompasses the temporal extent of A.",
+    "A happens entirely within the time frame of B.",
+    "The entire duration of A takes place within B.",
+    "A is fully contained within the time period of B.",
+    "B's temporal boundaries fully surround those of A."
+  ],
+  "Starts": [
+    "A commences simultaneously with the start of B.",
+    "The initiation of A aligns with the commencement of B.",
+    "B starts at the same time as A.",
+    "A starts with B.",
+    "The starting points of A and B coincide.",
+    "A initiates simultaneously with B.",
+    "The beginning of A aligns with the commencement of B.",
+    "B starts at the exact same time as A.",
+    "A starts when B starts.",
+    "The moment A starts, B also starts."
+  ],
+  "Finishes": [
+    "A concludes simultaneously with the conclusion of B.",
+    "The termination of A aligns with the end of B.",
+    "B finishes at the same time as A.",
+    "A ends with B.",
+    "The ending points of A and B coincide.",
+    "A concludes at the exact time when B finishes.",
+    "The conclusion of A aligns with the ending of B.",
+    "B concludes at the same time as A.",
+    "The moment A finishes, B also finishes.",
+    "The ending moments of A and B align perfectly."
+  ]
+}
+

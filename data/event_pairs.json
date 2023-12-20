@@ -1,0 +1,87 @@
+{
+  "Before": [
+    {"A": "Breakfast", "B": "Lunch"},
+    {"A": "Sunrise", "B": "Sunset"},
+    {"A": "Morning commute", "B": "Afternoon meeting"},
+    {"A": "Receiving an email", "B": "Replying to the email"},
+    {"A": "Planting seeds", "B": "Harvesting crops"},
+    {"A": "Wake-up call", "B": "Morning coffee"},
+    {"A": "Online order placement", "B": "Order confirmation email"},
+    {"A": "Library closing time", "B": "Return of borrowed books"},
+    {"A": "Hitting the snooze button", "B": "Getting out of bed"},
+    {"A": "Project initiation", "B": "Project kickoff meeting"}
+  ],
+  "Meets": [
+    {"A": "Arriving at the airport", "B": "Boarding the plane"},
+    {"A": "End of workday", "B": "Starting the evening shift"},
+    {"A": "Finishing a chapter", "B": "Starting the next chapter"},
+    {"A": "Putting on shoes", "B": "Going for a walk"},
+    {"A": "Arrival of the train", "B": "Departure of the train"},
+    {"A": "Finish workday", "B": "Evening relaxation"},
+    {"A": "Movie ending credits", "B": "Rolling the end titles"},
+    {"A": "Front door unlock", "B": "Entering the house"},
+    {"A": "Traffic signal turning green", "B": "Car acceleration"},
+    {"A": "Baking timer going off", "B": "Taking the cookies out of the oven"}
+  ],
+  "Overlaps": [
+    {"A": "Sleep", "B": "Morning hours"},
+    {"A": "Sickness", "B": "Taking medicine"},
+    {"A": "Hunger", "B": "Eating"},
+    {"A": "Exercising", "B": "Being exhausted"},
+    {"A": "Laughing", "B": "Good mood"},
+    {"A": "Being tired", "B": "Drinking coffee"},
+    {"A": "Workday", "B": "Afternoon"},
+    {"A": "Lying in bed", "B": "Sleeping"},
+    {"A": "Childhood", "B": "Education"},
+    {"A": "Rain", "B": "Storm"}
+  ],
+  "During": [
+    {"A": "Lunch break", "B": "Work hours"},
+    {"A": "Naptime", "B": "Afternoon"},
+    {"A": "Conference presentation", "B": "Conference day"},
+    {"A": "Dentist appointment", "B": "Morning hours"},
+    {"A": "Reading a newspaper", "B": "Morning routine"},
+    {"A": "Lecture", "B": "College class"},
+    {"A": "Lunch break", "B": "School day"},
+    {"A": "Construction noise", "B": "Office work hours"},
+    {"A": "Dental appointment", "B": "Afternoon schedule"},
+    {"A": "Rain shower", "B": "Outdoor picnic"}
+  ],
+  "Starts": [
+    {"A": "Movie credits", "B": "Feature film"},
+    {"A": "Ignition of the engine", "B": "Car trip"},
+    {"A": "Opening ceremony", "B": "Sports event"},
+    {"A": "First chapter", "B": "Novel"},
+    {"A": "Introductory class", "B": "Semester"},
+    {"A": "Opening scene", "B": "Movie"},
+    {"A": "First sip of coffee", "B": "Morning routine"},
+    {"A": "Semester start", "B": "Academic year"},
+    {"A": "Kickoff whistle", "B": "Soccer match"},
+    {"A": "Launch countdown", "B": "Space mission"}
+  ],
+  "Finishes": [
+    {"A": "Last bite of dessert", "B": "Dinner"},
+    {"A": "Signing the contract", "B": "Business negotiation"},
+    {"A": "Closing ceremony", "B": "Conference"},
+    {"A": "Final chord", "B": "Music performance"},
+    {"A": "End of the race", "B": "Marathon"},
+    {"A": "Last lap of the race", "B": "Marathon"},
+    {"A": "Closing remarks", "B": "Conference"},
+    {"A": "End of a song", "B": "Music concert"},
+    {"A": "Final exam question", "B": "University semester"},
+    {"A": "Game-winning goal", "B": "Soccer match"}
+  ],
+  "Equals": [
+    {"A": "Lunch break", "B": "Noon"},
+    {"A": "One-hour meeting", "B": "60 minutes"},
+    {"A": "Flight duration", "B": "Airtime"},
+    {"A": "Full day", "B": "24 hours"},
+    {"A": "Round-the-clock service", "B": "24/7 support"},
+    {"A": "Eating a meal", "B": "Dinner"},
+    {"A": "Week duration", "B": "7 days"},
+    {"A": "24/7 customer support", "B": "Round-the-clock service"},
+    {"A": "Full moon", "B": "Lunar cycle"},
+    {"A": "Year", "B": "365 days"}
+  ]
+}
+
