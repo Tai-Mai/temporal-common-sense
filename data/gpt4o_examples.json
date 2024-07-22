@@ -1,0 +1,366 @@
+{
+  "before": [
+    {
+      "event1": "breakfast",
+      "event2": "lunch",
+      "example": "breakfast comes before lunch."
+    },
+    {
+      "event1": "sunrise",
+      "event2": "noon",
+      "example": "sunrise happens before noon."
+    },
+    {
+      "event1": "winter",
+      "event2": "spring",
+      "example": "winter ends before spring begins."
+    },
+    {
+      "event1": "training",
+      "event2": "match",
+      "example": "training takes place before the match."
+    },
+    {
+      "event1": "morning session",
+      "event2": "afternoon session",
+      "example": "the morning session ends before the afternoon session starts."
+    },
+    {
+      "event1": "planning",
+      "event2": "execution",
+      "example": "planning happens before execution."
+    },
+    {
+      "event1": "seed planting",
+      "event2": "harvest",
+      "example": "seed planting occurs before the harvest."
+    },
+    {
+      "event1": "admission",
+      "event2": "graduation",
+      "example": "admission happens before graduation."
+    },
+    {
+      "event1": "morning jog",
+      "event2": "breakfast",
+      "example": "a morning jog is completed before breakfast."
+    },
+    {
+      "event1": "sunset",
+      "event2": "nightfall",
+      "example": "sunset occurs before nightfall."
+    }
+  ],
+  "meets": [
+    {
+      "event1": "intro",
+      "event2": "main talk",
+      "example": "the introduction meets the main talk."
+    },
+    {
+      "event1": "morning session",
+      "event2": "lunch break",
+      "example": "the morning session meets the lunch break."
+    },
+    {
+      "event1": "cooking",
+      "event2": "serving",
+      "example": "cooking meets serving."
+    },
+    {
+      "event1": "heating",
+      "event2": "boiling",
+      "example": "heating meets boiling."
+    },
+    {
+      "event1": "first act",
+      "event2": "intermission",
+      "example": "the first act meets the intermission."
+    },
+    {
+      "event1": "pre-show",
+      "event2": "main show",
+      "example": "the pre-show meets the main show."
+    },
+    {
+      "event1": "warm-up",
+      "event2": "exercise",
+      "example": "the warm-up meets the exercise."
+    },
+    {
+      "event1": "setup",
+      "event2": "presentation",
+      "example": "the setup meets the presentation."
+    },
+    {
+      "event1": "washing",
+      "event2": "drying",
+      "example": "washing meets drying."
+    },
+    {
+      "event1": "checkout",
+      "event2": "departure",
+      "example": "checkout meets departure."
+    }
+  ],
+  "overlaps": [
+    {
+      "event1": "morning shift",
+      "event2": "afternoon shift",
+      "example": "the morning shift overlaps with the afternoon shift."
+    },
+    {
+      "event1": "warm-up",
+      "event2": "training",
+      "example": "the warm-up overlaps with the training session."
+    },
+    {
+      "event1": "construction phase 1",
+      "event2": "construction phase 2",
+      "example": "construction phase 1 overlaps with phase 2."
+    },
+    {
+      "event1": "introduction",
+      "event2": "discussion",
+      "example": "the introduction overlaps with the discussion."
+    },
+    {
+      "event1": "phase 1",
+      "event2": "phase 2",
+      "example": "phase 1 overlaps with phase 2."
+    },
+    {
+      "event1": "rainfall",
+      "event2": "thunderstorm",
+      "example": "rainfall overlaps with the thunderstorm."
+    },
+    {
+      "event1": "early registration",
+      "event2": "regular registration",
+      "example": "early registration overlaps with regular registration."
+    },
+    {
+      "event1": "introduction",
+      "event2": "main topic",
+      "example": "the introduction overlaps with the main topic."
+    },
+    {
+      "event1": "setup",
+      "event2": "event",
+      "example": "the setup overlaps with the event."
+    },
+    {
+      "event1": "preparation",
+      "event2": "execution",
+      "example": "preparation overlaps with execution."
+    }
+  ],
+  "starts": [
+    {
+      "event1": "training session",
+      "event2": "event",
+      "example": "the training session starts with the event."
+    },
+    {
+      "event1": "lecture",
+      "event2": "class",
+      "example": "the lecture starts the class."
+    },
+    {
+      "event1": "chapter 1",
+      "event2": "book",
+      "example": "chapter 1 starts the book."
+    },
+    {
+      "event1": "opening remarks",
+      "event2": "ceremony",
+      "example": "the opening remarks start the ceremony."
+    },
+    {
+      "event1": "prologue",
+      "event2": "story",
+      "example": "the prologue starts the story."
+    },
+    {
+      "event1": "warm-up",
+      "event2": "exercise routine",
+      "example": "the warm-up starts the exercise routine."
+    },
+    {
+      "event1": "morning",
+      "event2": "day",
+      "example": "the morning starts the day."
+    },
+    {
+      "event1": "first period",
+      "event2": "school day",
+      "example": "the first period starts the school day."
+    },
+    {
+      "event1": "introductory phase",
+      "event2": "program",
+      "example": "the introductory phase starts the program."
+    },
+    {
+      "event1": "initial meeting",
+      "event2": "project",
+      "example": "the initial meeting starts the project."
+    }
+  ],
+  "finishes": [
+    {
+      "event1": "finale",
+      "event2": "show",
+      "example": "the finale finishes the show."
+    },
+    {
+      "event1": "last chapter",
+      "event2": "book",
+      "example": "the last chapter finishes the book."
+    },
+    {
+      "event1": "conclusion",
+      "event2": "speech",
+      "example": "the conclusion finishes the speech."
+    },
+    {
+      "event1": "wrap-up",
+      "event2": "meeting",
+      "example": "the wrap-up finishes the meeting."
+    },
+    {
+      "event1": "graduation",
+      "event2": "school",
+      "example": "graduation finishes school."
+    },
+    {
+      "event1": "final exam",
+      "event2": "course",
+      "example": "the final exam finishes the course."
+    },
+    {
+      "event1": "last act",
+      "event2": "play",
+      "example": "the last act finishes the play."
+    },
+    {
+      "event1": "closing remarks",
+      "event2": "conference",
+      "example": "the closing remarks finish the conference."
+    },
+    {
+      "event1": "last period",
+      "event2": "school day",
+      "example": "the last period finishes the school day."
+    },
+    {
+      "event1": "final round",
+      "event2": "tournament",
+      "example": "the final round finishes the tournament."
+    }
+  ],
+  "during": [
+    {
+      "event1": "speech",
+      "event2": "conference",
+      "example": "the speech occurs during the conference."
+    },
+    {
+      "event1": "break",
+      "event2": "workday",
+      "example": "the break happens during the workday."
+    },
+    {
+      "event1": "rain",
+      "event2": "storm",
+      "example": "the rain falls during the storm."
+    },
+    {
+      "event1": "lunch",
+      "event2": "work hours",
+      "example": "lunch occurs during work hours."
+    },
+    {
+      "event1": "holiday",
+      "event2": "vacation",
+      "example": "the holiday takes place during the vacation."
+    },
+    {
+      "event1": "commercials",
+      "event2": "TV show",
+      "example": "commercials are shown during the TV show."
+    },
+    {
+      "event1": "training",
+      "event2": "program",
+      "example": "the training happens during the program."
+    },
+    {
+      "event1": "chapter",
+      "event2": "book",
+      "example": "the chapter occurs during the book."
+    },
+    {
+      "event1": "performance",
+      "event2": "event",
+      "example": "the performance happens during the event."
+    },
+    {
+      "event1": "lecture",
+      "event2": "semester",
+      "example": "the lecture occurs during the semester."
+    }
+  ],
+  "equal": [
+    {
+      "event1": "race start",
+      "event2": "gun shot",
+      "example": "the race start is equal to the gun shot."
+    },
+    {
+      "event1": "concert",
+      "event2": "performance",
+      "example": "the concert is equal to the performance."
+    },
+    {
+      "event1": "workshop",
+      "event2": "training",
+      "example": "the workshop is equal to the training session."
+    },
+    {
+      "event1": "ceremony",
+      "event2": "event",
+      "example": "the ceremony is equal to the event."
+    },
+    {
+      "event1": "vacation",
+      "event2": "holiday",
+      "example": "the vacation is equal to the holiday."
+    },
+    {
+      "event1": "meeting",
+      "event2": "discussion",
+      "example": "the meeting is equal to the discussion."
+    },
+    {
+      "event1": "class",
+      "event2": "lesson",
+      "example": "the class is equal to the lesson."
+    },
+    {
+      "event1": "game",
+      "event2": "match",
+      "example": "the game is equal to the match."
+    },
+    {
+      "event1": "presentation",
+      "event2": "lecture",
+      "example": "the presentation is equal to the lecture."
+    },
+    {
+      "event1": "film",
+      "event2": "movie",
+      "example": "the film is equal to the movie."
+    }
+  ]
+}

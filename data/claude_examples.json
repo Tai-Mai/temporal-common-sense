@@ -1,0 +1,366 @@
+{
+  "before": [
+    {
+      "event1": "birth",
+      "event2": "death",
+      "example": "A person's birth happens before their death."
+    },
+    {
+      "event1": "planting a seed",
+      "event2": "seed germination",
+      "example": "Planting a seed happens before the seed germinates."
+    },
+    {
+      "event1": "sunrise",
+      "event2": "sunset",
+      "example": "Sunrise happens before sunset on the same day."
+    },
+    {
+      "event1": "conception",
+      "event2": "birth",
+      "example": "Conception happens before birth."
+    },
+    {
+      "event1": "lightning",
+      "event2": "thunder",
+      "example": "Lightning happens before thunder is heard."
+    },
+    {
+      "event1": "cause",
+      "event2": "effect",
+      "example": "A cause always happens before its effect."
+    },
+    {
+      "event1": "cooking",
+      "event2": "eating",
+      "example": "Cooking a meal happens before eating that meal."
+    },
+    {
+      "event1": "writing",
+      "event2": "reading",
+      "example": "Writing a book happens before reading that book."
+    },
+    {
+      "event1": "recording",
+      "event2": "playback",
+      "example": "Recording a video happens before playing back that video."
+    },
+    {
+      "event1": "learning",
+      "event2": "applying knowledge",
+      "example": "Learning a skill happens before applying that skill."
+    }
+  ],
+  "meets": [
+    {
+      "event1": "childhood",
+      "event2": "adolescence",
+      "example": "Childhood meets adolescence in human development."
+    },
+    {
+      "event1": "one day",
+      "event2": "next day",
+      "example": "One day meets the next day at midnight."
+    },
+    {
+      "event1": "pregnancy",
+      "event2": "childbirth",
+      "example": "Pregnancy meets childbirth."
+    },
+    {
+      "event1": "winter",
+      "event2": "spring",
+      "example": "Winter meets spring at the spring equinox."
+    },
+    {
+      "event1": "bachelor's degree",
+      "event2": "master's degree",
+      "example": "A bachelor's degree program meets a master's degree program for continuous students."
+    },
+    {
+      "event1": "engagement",
+      "event2": "marriage",
+      "example": "The engagement period meets marriage at the wedding ceremony."
+    },
+    {
+      "event1": "countdown",
+      "event2": "launch",
+      "example": "A countdown meets the launch of a rocket."
+    },
+    {
+      "event1": "incubation",
+      "event2": "hatching",
+      "example": "The incubation period meets hatching for bird eggs."
+    },
+    {
+      "event1": "charging",
+      "event2": "full battery",
+      "example": "The charging process meets full battery status."
+    },
+    {
+      "event1": "race",
+      "event2": "finish line crossing",
+      "example": "A race meets crossing the finish line for the winner."
+    }
+  ],
+  "overlaps": [
+    {
+      "event1": "high school",
+      "event2": "teenage years",
+      "example": "High school overlaps with teenage years."
+    },
+    {
+      "event1": "sleep",
+      "event2": "night",
+      "example": "Sleep typically overlaps with night time."
+    },
+    {
+      "event1": "college",
+      "event2": "early adulthood",
+      "example": "College years overlap with early adulthood."
+    },
+    {
+      "event1": "pregnancy",
+      "event2": "work",
+      "example": "Pregnancy often overlaps with a woman's working life."
+    },
+    {
+      "event1": "learning to walk",
+      "event2": "learning to talk",
+      "example": "Learning to walk overlaps with learning to talk in child development."
+    },
+    {
+      "event1": "summer",
+      "event2": "school vacation",
+      "example": "Summer overlaps with school vacation in many countries."
+    },
+    {
+      "event1": "sunset",
+      "event2": "twilight",
+      "example": "Sunset overlaps with twilight."
+    },
+    {
+      "event1": "adolescence",
+      "event2": "puberty",
+      "example": "Adolescence overlaps with puberty."
+    },
+    {
+      "event1": "writing a thesis",
+      "event2": "final year of study",
+      "example": "Writing a thesis overlaps with the final year of study."
+    },
+    {
+      "event1": "movie",
+      "event2": "eating popcorn",
+      "example": "Watching a movie often overlaps with eating popcorn."
+    }
+  ],
+  "starts": [
+    {
+      "event1": "birth",
+      "event2": "life",
+      "example": "Birth starts life."
+    },
+    {
+      "event1": "ignition",
+      "event2": "car journey",
+      "example": "Ignition starts a car journey."
+    },
+    {
+      "event1": "opening credits",
+      "event2": "movie",
+      "example": "Opening credits start a movie."
+    },
+    {
+      "event1": "national anthem",
+      "event2": "sports game",
+      "example": "The national anthem starts many professional sports games."
+    },
+    {
+      "event1": "enrollment",
+      "event2": "school year",
+      "example": "Enrollment starts the school year."
+    },
+    {
+      "event1": "kickoff",
+      "event2": "football match",
+      "example": "Kickoff starts a football match."
+    },
+    {
+      "event1": "opening bell",
+      "event2": "trading day",
+      "example": "The opening bell starts the trading day on stock exchanges."
+    },
+    {
+      "event1": "wedding ceremony",
+      "event2": "marriage",
+      "example": "The wedding ceremony starts a marriage."
+    },
+    {
+      "event1": "groundbreaking",
+      "event2": "construction project",
+      "example": "A groundbreaking ceremony starts a construction project."
+    },
+    {
+      "event1": "first note",
+      "event2": "musical performance",
+      "example": "The first note starts a musical performance."
+    }
+  ],
+  "during": [
+    {
+      "event1": "halftime",
+      "event2": "football game",
+      "example": "Halftime occurs during a football game."
+    },
+    {
+      "event1": "intermission",
+      "event2": "play",
+      "example": "Intermission occurs during a play."
+    },
+    {
+      "event1": "adolescence",
+      "event2": "human life",
+      "example": "Adolescence occurs during human life."
+    },
+    {
+      "event1": "lunch break",
+      "event2": "workday",
+      "example": "Lunch break occurs during a workday."
+    },
+    {
+      "event1": "commercial break",
+      "event2": "TV show",
+      "example": "A commercial break occurs during a TV show."
+    },
+    {
+      "event1": "pit stop",
+      "event2": "car race",
+      "example": "A pit stop occurs during a car race."
+    },
+    {
+      "event1": "dream",
+      "event2": "sleep",
+      "example": "A dream occurs during sleep."
+    },
+    {
+      "event1": "climax",
+      "event2": "story",
+      "example": "The climax occurs during a story."
+    },
+    {
+      "event1": "eclipse",
+      "event2": "day",
+      "example": "A solar eclipse occurs during the day."
+    },
+    {
+      "event1": "turbulence",
+      "event2": "flight",
+      "example": "Turbulence occurs during a flight."
+    }
+  ],
+  "finishes": [
+    {
+      "event1": "graduation ceremony",
+      "event2": "education",
+      "example": "A graduation ceremony finishes a period of education."
+    },
+    {
+      "event1": "closing credits",
+      "event2": "movie",
+      "example": "Closing credits finish a movie."
+    },
+    {
+      "event1": "dessert",
+      "event2": "meal",
+      "example": "Dessert finishes a meal."
+    },
+    {
+      "event1": "final whistle",
+      "event2": "sports match",
+      "example": "The final whistle finishes a sports match."
+    },
+    {
+      "event1": "handshake",
+      "event2": "business meeting",
+      "example": "A handshake often finishes a business meeting."
+    },
+    {
+      "event1": "encore",
+      "event2": "concert",
+      "example": "An encore finishes a concert."
+    },
+    {
+      "event1": "conclusion",
+      "event2": "essay",
+      "example": "A conclusion finishes an essay."
+    },
+    {
+      "event1": "final exam",
+      "event2": "course",
+      "example": "A final exam finishes a course."
+    },
+    {
+      "event1": "retirement",
+      "event2": "career",
+      "example": "Retirement finishes a career."
+    },
+    {
+      "event1": "closing bell",
+      "event2": "trading day",
+      "example": "The closing bell finishes the trading day on stock exchanges."
+    }
+  ],
+  "equals": [
+    {
+      "event1": "pregnancy",
+      "event2": "gestation",
+      "example": "Pregnancy equals gestation in humans."
+    },
+    {
+      "event1": "lifetime",
+      "event2": "time between birth and death",
+      "example": "A lifetime equals the time between birth and death."
+    },
+    {
+      "event1": "Earth's rotation",
+      "event2": "24-hour day",
+      "example": "One Earth rotation equals a 24-hour day."
+    },
+    {
+      "event1": "lunar month",
+      "event2": "moon's orbit around Earth",
+      "example": "A lunar month equals the moon's orbit around Earth."
+    },
+    {
+      "event1": "century",
+      "event2": "100 years",
+      "example": "A century equals 100 years."
+    },
+    {
+      "event1": "incubation period",
+      "event2": "time between infection and first symptoms",
+      "example": "The incubation period equals the time between infection and first symptoms."
+    },
+    {
+      "event1": "365 days",
+      "event2": "one year",
+      "example": "365 days equal one year (excluding leap years)."
+    },
+    {
+      "event1": "term of office",
+      "event2": "duration of political position",
+      "example": "A term of office equals the duration of a political position."
+    },
+    {
+      "event1": "warranty period",
+      "event2": "time of guaranteed product support",
+      "example": "The warranty period equals the time of guaranteed product support."
+    },
+    {
+      "event1": "runtime",
+      "event2": "duration of movie or show",
+      "example": "Runtime equals the duration of a movie or show."
+    }
+  ]
+}
