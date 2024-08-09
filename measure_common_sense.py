@@ -17,6 +17,7 @@ type Count = int
 
 def main(lm_mode: str = "causal", model_id=None):
     data_filepath = "data/claude_examples.json"
+    output_filepath = "confusion_matrices.json"
 
     match lm_mode:
         case "causal":
@@ -54,12 +55,15 @@ def main(lm_mode: str = "causal", model_id=None):
                 ]
                 metric_values: dict[str, list[float] | float] = metric(verbalizations)
                 relation_metric_values[relation] = metric_values["average"]
-            predicted_relation: Relation = max(
+            predicted_relation: Relation = min(
                 relation_metric_values, key=relation_metric_values.get
             )
             confusions[predicted_relation] += 1
         confusion_matrices[true_relation] = confusions
+
     print(confusion_matrices)
+    with open(output_filepath, "w") as f:
+        json.dump(confusion_matrices, f)
 
 
 if __name__ == "__main__":

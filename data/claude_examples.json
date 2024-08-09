@@ -147,7 +147,7 @@
       "{event1} and {event2} are adjacent with no gap",
       "{event2} commences at the exact moment {event1} concludes",
       "There is no interval between the end of {event1} and the start of {event2}"
-    ],    
+    ],
     "examples": [
       {
         "event1": "childhood",
@@ -420,7 +420,7 @@
       "{event2} is initiated by {event1}",
       "The commencement of {event2} coincides with {event1}"
     ],
-    "examples": 
+    "examples":
     [
       {
         "event1": "birth",
@@ -682,11 +682,6 @@
   },
   "finishes": {
     "verbalizations": [
-<<<<<<< HEAD
-      "{event1} finishes {event2}.",
-      "{event1} happens at the end of {event2}.",
-      "{event1} ends at the same time as {event2}."
-=======
       "{event1} finishes {event2}",
       "{event1} concludes {event2}",
       "{event1} marks the end of {event2}",
@@ -697,7 +692,6 @@
       "{event1} is the endpoint of {event2}",
       "{event2} is terminated by {event1}",
       "The completion of {event2} coincides with {event1}"
->>>>>>> 4532e57 (Implement confusion matrix)
     ],
     "examples": [
       {
@@ -824,11 +818,6 @@
   },
   "equals": {
     "verbalizations": [
-<<<<<<< HEAD
-      "{event1} is equal to {event2}.",
-      "{event1} starts and ends with {event2}.",
-      "{event1} is the same as {event2}."
-=======
       "{event1} equals {event2}",
       "{event1} is identical in duration to {event2}",
       "{event1} and {event2} are coextensive",
@@ -839,7 +828,6 @@
       "{event1} and {event2} occupy the same time period",
       "{event1} is synchronous with {event2}",
       "The timespan of {event1} matches that of {event2}"
->>>>>>> 4532e57 (Implement confusion matrix)
     ],
     "examples": [
       {
