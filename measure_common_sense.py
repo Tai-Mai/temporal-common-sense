@@ -13,10 +13,10 @@ from tqdm import tqdm
 from utils.metrics import Metric, Perplexity, PseudoPerplexity
 
 
-type Relation = str
-type Verbalization = str
-type Event = str
-type Count = int
+Relation = str
+Verbalization = str
+Event = str
+Count = int
 
 
 def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False):
@@ -30,22 +30,29 @@ def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False
     else:
         bnb_config = None
 
-    match lm_mode:
-        case "causal":
-            model_id = model_id or "gpt2"
-            model: PreTrainedModel = AutoModelForCausalLM.from_pretrained(
-                model_id, 
-                quantization_config=bnb_config,
-                device_map="auto",
-            )
-            print(f"{model.device=}")
-            metric: Metric = Perplexity(model=model)
-        case "masked":
-            model_id = model_id or "roberta-base"
-            model: PreTrainedModel = AutoModelForMaskedLM.from_pretrained(model_id, device_map="auto")
-            metric: Metric = PseudoPerplexity(model=model)
-        case _:
-            raise ValueError("Invalid language modeling mode")
+    if lm_mode == "causal":
+        model_id = model_id or "gpt2"
+        model: PreTrainedModel = AutoModelForCausalLM.from_pretrained(
+            model_id, 
+            device_map="auto",
+            quantization_config=bnb_config,
+            torch_dtype=torch.bfloat16 if quantization else None,
+            cache_dir="./cache",
+        )
+        print(f"{model.device=}")
+        metric: Metric = Perplexity(model=model)
+    elif lm_mode == "masked":
+        model_id = model_id or "roberta-base"
+        model: PreTrainedModel = AutoModelForMaskedLM.from_pretrained(
+            model_id, 
+            device_map="auto", 
+            quantization_config=bnb_config,
+            torch_dtype=torch.bfloat16 if quantization else None,
+            cache_dir="./cache",
+        )
+        metric: Metric = PseudoPerplexity(model=model)
+    else:
+        raise ValueError("Invalid language modeling mode")
 
     data_filepath = "data/claude_examples.json"
     output_filepath = f"confusion_matrices_{model_id}.json"
