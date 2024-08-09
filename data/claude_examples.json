@@ -1,9 +1,16 @@
 {
   "before": {
     "verbalizations": [
-      "{event1} happens sometime before {event2}.",
-      "Sometime before {event2}, {event1} happens.",
-      "{event1} ends sometime before {event2} begins."
+      "{event1} happens before {event2}",
+      "{event1} precedes {event2}",
+      "{event1} occurs prior to {event2}",
+      "{event1} takes place before {event2}",
+      "{event1} is earlier than {event2}",
+      "{event2} follows {event1}",
+      "{event2} happens after {event1}",
+      "{event1} is completed before {event2} begins",
+      "{event2} starts after {event1} ends",
+      "{event1} concludes prior to the commencement of {event2}"
     ],
     "examples": [
       {
@@ -130,10 +137,17 @@
   },
   "meets": {
     "verbalizations": [
-      "{event1} happens right before {event2}.",
-      "Just before {event2}, {event1} happens.",
-      "{event1} ends just before {event2} begins."
-    ],
+      "{event1} meets {event2}",
+      "{event1} is immediately followed by {event2}",
+      "{event2} immediately follows {event1}",
+      "{event1} ends exactly when {event2} begins",
+      "{event2} starts precisely as {event1} finishes",
+      "{event1} transitions directly into {event2}",
+      "The conclusion of {event1} marks the beginning of {event2}",
+      "{event1} and {event2} are adjacent with no gap",
+      "{event2} commences at the exact moment {event1} concludes",
+      "There is no interval between the end of {event1} and the start of {event2}"
+    ],    
     "examples": [
       {
         "event1": "childhood",
@@ -259,9 +273,16 @@
   },
   "overlaps": {
     "verbalizations": [
-      "{event1} overlaps with {event2}.",
-      "{event1} shares a time period with {event2}.",
-      "{event1} partially happens during {event2}."
+      "{event1} overlaps with {event2}",
+      "{event1} partially coincides with {event2}",
+      "{event1} and {event2} intersect in time",
+      "Part of {event1} occurs simultaneously with part of {event2}",
+      "{event1} begins before {event2} and ends during it",
+      "{event2} starts during {event1} and continues after it",
+      "There is a period when both {event1} and {event2} are occurring",
+      "{event1} and {event2} share a common time frame",
+      "The latter part of {event1} coincides with the early part of {event2}",
+      "{event1} is ongoing when {event2} begins"
     ],
     "examples": [
       {
@@ -388,9 +409,16 @@
   },
   "starts": {
     "verbalizations": [
-      "{event1} starts {event2}.",
-      "{event1} is the first stage of {event2}.",
-      "{event1} happens at the beginning of {event2}."
+      "{event1} starts {event2}",
+      "{event1} initiates {event2}",
+      "{event1} marks the beginning of {event2}",
+      "{event2} begins with {event1}",
+      "{event1} and {event2} commence simultaneously",
+      "{event1} triggers the start of {event2}",
+      "The onset of {event2} is marked by {event1}",
+      "{event1} is the starting point of {event2}",
+      "{event2} is initiated by {event1}",
+      "The commencement of {event2} coincides with {event1}"
     ],
     "examples": 
     [
@@ -518,9 +546,16 @@
   },
   "during": {
     "verbalizations": [
-      "{event1} happens during {event2}.",
-      "while {event1} happens, {event2} happens.",
-      "{event1} happens in the middle of {event2}."
+      "{event1} occurs during {event2}",
+      "{event1} takes place within {event2}",
+      "{event2} encompasses {event1}",
+      "{event1} is contained within {event2}",
+      "{event1} happens in the course of {event2}",
+      "{event2} includes {event1}",
+      "{event1} is a sub-event of {event2}",
+      "{event2} is ongoing throughout {event1}",
+      "{event1} falls within the timespan of {event2}",
+      "{event2} is the broader context in which {event1} occurs"
     ],
     "examples": [
       {
@@ -647,9 +682,22 @@
   },
   "finishes": {
     "verbalizations": [
+<<<<<<< HEAD
       "{event1} finishes {event2}.",
       "{event1} happens at the end of {event2}.",
       "{event1} ends at the same time as {event2}."
+=======
+      "{event1} finishes {event2}",
+      "{event1} concludes {event2}",
+      "{event1} marks the end of {event2}",
+      "{event2} ends with {event1}",
+      "{event1} and {event2} conclude simultaneously",
+      "{event1} brings {event2} to a close",
+      "The conclusion of {event2} is marked by {event1}",
+      "{event1} is the endpoint of {event2}",
+      "{event2} is terminated by {event1}",
+      "The completion of {event2} coincides with {event1}"
+>>>>>>> 4532e57 (Implement confusion matrix)
     ],
     "examples": [
       {
@@ -776,9 +824,22 @@
   },
   "equals": {
     "verbalizations": [
+<<<<<<< HEAD
       "{event1} is equal to {event2}.",
       "{event1} starts and ends with {event2}.",
       "{event1} is the same as {event2}."
+=======
+      "{event1} equals {event2}",
+      "{event1} is identical in duration to {event2}",
+      "{event1} and {event2} are coextensive",
+      "{event1} coincides exactly with {event2}",
+      "{event1} and {event2} have the same temporal extent",
+      "{event1} is temporally equivalent to {event2}",
+      "The duration of {event1} is the same as {event2}",
+      "{event1} and {event2} occupy the same time period",
+      "{event1} is synchronous with {event2}",
+      "The timespan of {event1} matches that of {event2}"
+>>>>>>> 4532e57 (Implement confusion matrix)
     ],
     "examples": [
       {
