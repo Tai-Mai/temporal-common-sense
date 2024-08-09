@@ -4,8 +4,10 @@ from peft import LoraConfig, PeftModel, get_peft_model
 from transformers import (
     AutoModelForCausalLM,
     AutoModelForMaskedLM,
+    BitsAndBytesConfig,
     PreTrainedModel,
 )
+import torch
 from tqdm import tqdm
 
 from utils.metrics import Metric, Perplexity, PseudoPerplexity
@@ -18,33 +20,32 @@ type Count = int
 
 
 def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False):
+    if quantization:
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            #bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4",  # fp4 is default
+            bnb_4bit_compute_dtype=torch.bfloat16,
+        )
+    else:
+        bnb_config = None
+
     match lm_mode:
         case "causal":
             model_id = model_id or "gpt2"
-            model: PreTrainedModel = AutoModelForCausalLM.from_pretrained(model_id)
+            model: PreTrainedModel = AutoModelForCausalLM.from_pretrained(
+                model_id, 
+                quantization_config=bnb_config,
+                device_map="auto",
+            )
+            print(f"{model.device=}")
             metric: Metric = Perplexity(model=model)
         case "masked":
             model_id = model_id or "roberta-base"
-            model: PreTrainedModel = AutoModelForMaskedLM.from_pretrained(model_id)
+            model: PreTrainedModel = AutoModelForMaskedLM.from_pretrained(model_id, device_map="auto")
             metric: Metric = PseudoPerplexity(model=model)
         case _:
             raise ValueError("Invalid language modeling mode")
-
-    if quantization:
-        model = prepare_model_for_kbit_training(
-            model, gradient_checkpointing_kwargs={"use_reentrant": True}
-        )
-        peft_config = LoraConfig(
-            r=16,
-            lora_alpha=16,
-            lora_dropout=0.05,
-            use_rslora=True,
-            target_modules=["q_proj", "v_proj"],
-            task_type="CAUSAL_LM",
-            inference_mode=True,
-        )
-
-        model: PeftModel = get_peft_model(model, peft_config=peft_config)
 
     data_filepath = "data/claude_examples.json"
     output_filepath = f"confusion_matrices_{model_id}.json"

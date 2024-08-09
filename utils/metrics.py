@@ -65,7 +65,8 @@ class Perplexity(Metric):
             )
             with torch.no_grad():
                 output = self.model(
-                    input_ids=tokenized_sentence, labels=tokenized_sentence.clone()
+                    input_ids=tokenized_sentence.to(self.model.device), 
+                    labels=tokenized_sentence.clone().to(self.model.device),
                 )
                 log_likelihood: torch.Tensor = output.loss.detach()
                 log_likelihoods.append(log_likelihood.item())
@@ -133,7 +134,7 @@ class PseudoPerplexity(Metric):
             masked_sentence = tokenized_sentence.clone()
             masked_sentence[:, token_position] = self.tokenizer.mask_token_id
             with torch.no_grad():
-                output = self.model(input_ids=masked_sentence)
+                output = self.model(input_ids=masked_sentence.to(self.model.device))
                 logits: torch.Tensor = output.logits.squeeze()
             probabilities = logits[token_position].softmax(dim=0)
             probability = probabilities[original_token_id]

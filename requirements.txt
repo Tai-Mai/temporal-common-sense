@@ -1,4 +1,6 @@
+bitsandbytes
 evaluate
 fire
+peft
 torch
-transformers
+transformers>=4.44
