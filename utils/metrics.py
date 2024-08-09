@@ -3,12 +3,16 @@ from copy import deepcopy
 import evaluate
 import numpy as np
 from math import log, exp
-from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForMaskedLM
+from transformers import (
+    AutoTokenizer,
+    PreTrainedModel,
+    PreTrainedTokenizer,
+)
 import torch
 
 
 class Metric(ABC):
-    def __init__(self, model_id: str) -> None:
+    def __init__(self, model: PreTrainedModel) -> None:
         raise NotImplementedError
 
     def __call__(self, sentences: list[str]) -> dict[str, list[float] | float]:
@@ -20,21 +24,24 @@ class Perplexity(Metric):
     Returns the pseudo perplexity for a list of sentences. Only designed for causal language models
     """
 
-    def __init__(self, model_id: str, normalize: bool = True) -> None:
-        self.model_id = model_id
-        self.model = AutoModelForCausalLM.from_pretrained(self.model_id)
-        self.metric = evaluate.load("perplexity", module_type="metric")
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
+    def __init__(self, model: PreTrainedModel) -> None:
+        # self.model = AutoModelForCausalLM.from_pretrained(self.model_id)
+        self.model: PreTrainedModel = model
+        self.premade_metric = evaluate.load("perplexity", module_type="metric")
+        self.tokenizer: PreTrainedTokenizer = AutoTokenizer.from_pretrained(
+            self.model.name_or_path
+        )
 
-    def use_premade_metric(
+    def _use_premade_metric(
         self, sentences: list[str]
     ) -> dict[str, list[float] | float]:
         """
+        DEPRECATED
         Returns the perplexities of each sentence as well as the mean perplexity across all sentences using the huggingface metric. This seems to return inflated scores.
 
         :param sentences: List of sentences to measure perplexity for
         """
-        results: dict[str, list[float] | np.float64] = self.metric.compute(
+        results: dict[str, list[float] | np.float64] = self.premade_metric.compute(
             model_id=self.model_id, add_start_token=True, predictions=sentences
         )
 
@@ -75,10 +82,9 @@ class PseudoPerplexity(Metric):
     Returns the pseudo perplexity for a list of sentences. Only designed for masked language models.
     """
 
-    def __init__(self, model_id, normalize: bool = True):
-        self.model = AutoModelForMaskedLM.from_pretrained(model_id)
-        self.tokenizer = AutoTokenizer.from_pretrained(model_id)
-        self.normalize = normalize
+    def __init__(self, model: PreTrainedModel):
+        self.model: PreTrainedModel = model
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model.name_or_path)
 
     def __call__(self, sentences: list[str]) -> dict[str, list[float] | float]:
         """

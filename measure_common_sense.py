@@ -1,10 +1,12 @@
-import evaluate
 import fire
-from functools import partial
 import json
-from transformers import AutoModelForCausalLM, AutoModelForMaskedLM, AutoTokenizer
+from peft import LoraConfig, PeftModel, get_peft_model
+from transformers import (
+    AutoModelForCausalLM,
+    AutoModelForMaskedLM,
+    PreTrainedModel,
+)
 from tqdm import tqdm
-from typing import Callable
 
 from utils.metrics import Metric, Perplexity, PseudoPerplexity
 
@@ -15,17 +17,37 @@ type Event = str
 type Count = int
 
 
-def main(lm_mode: str = "causal", model_id=None):
-    data_filepath = "data/claude_examples.json"
-    output_filepath = "confusion_matrices.json"
-
+def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False):
     match lm_mode:
         case "causal":
-            metric: Metric = Perplexity(model_id=model_id or "gpt2")
+            model_id = model_id or "gpt2"
+            model: PreTrainedModel = AutoModelForCausalLM.from_pretrained(model_id)
+            metric: Metric = Perplexity(model=model)
         case "masked":
-            metric: Metric = PseudoPerplexity(model_id=model_id or "roberta-base")
+            model_id = model_id or "roberta-base"
+            model: PreTrainedModel = AutoModelForMaskedLM.from_pretrained(model_id)
+            metric: Metric = PseudoPerplexity(model=model)
         case _:
             raise ValueError("Invalid language modeling mode")
+
+    if quantization:
+        model = prepare_model_for_kbit_training(
+            model, gradient_checkpointing_kwargs={"use_reentrant": True}
+        )
+        peft_config = LoraConfig(
+            r=16,
+            lora_alpha=16,
+            lora_dropout=0.05,
+            use_rslora=True,
+            target_modules=["q_proj", "v_proj"],
+            task_type="CAUSAL_LM",
+            inference_mode=True,
+        )
+
+        model: PeftModel = get_peft_model(model, peft_config=peft_config)
+
+    data_filepath = "data/claude_examples.json"
+    output_filepath = f"confusion_matrices_{model_id}.json"
 
     with open(data_filepath) as f:
         data: dict[
