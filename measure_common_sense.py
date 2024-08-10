@@ -54,8 +54,9 @@ def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False
     else:
         raise ValueError("Invalid language modeling mode")
 
-    data_filepath = "data/claude_examples.json"
-    output_filepath = f"confusion_matrices_{model_id}.json"
+    data_filepath: str = "data/claude_examples.json"
+    model_name: str = model_id.split("/")[-1].replace(".", "-").lower()
+    confusion_matrices_filepath = f"{model_name}_confusion_matrices.json"
 
     with open(data_filepath) as f:
         data: dict[
@@ -92,7 +93,7 @@ def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False
         confusion_matrices[true_relation] = confusions
 
     print(confusion_matrices)
-    with open(output_filepath, "w") as f:
+    with open(confusion_matrices_filepath, "w") as f:
         json.dump(confusion_matrices, f)
 
 
