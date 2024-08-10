@@ -3,12 +3,15 @@ This repository contains the code to test pre-trained language models for their 
 The associated research report can be found in `./report`
 
 ## Options
-* Set the `--model_id` to the huggingface model id of the desired model. Tested examples:
+* `--model_id`: Set to the huggingface model id of the desired model. Tested examples:
   * `meta-llama/Meta-Llama-3.1-8B`
   * `roberta-base`
   * `gpt2`
-* Make sure to set `--lm_mode` to the correct kind of language modeling according to the model specified with `--model_id`. Can be `causal` or `masked`.
-* Add the `--quantization` flag to enable 4-bit quantization
+* `--lm_mode`: Make sure to set to the correct kind of language modeling according to the model specified with `--model_id`. Can be one of the following:
+  * `causal` 
+  * `masked`
+* `--quantization`: Add this flag to enable 4-bit quantization
+* `--normalize`: Add this flag to normalize the metric scores by subtracting the generic scores of the verbalizations. This aims to cancel out the effect that verbalizations that have an inherently low metric score will drag down the verbalized scores as well
 
 ## Usage
 ### Docker
