@@ -1,0 +1,3564 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.1.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+config.json:   0% 0.00/665 [00:00<?, ?B/s]config.json: 100% 665/665 [00:00<00:00, 3.28MB/s]
+model.safetensors:   0% 0.00/548M [00:00<?, ?B/s]model.safetensors:   4% 21.0M/548M [00:00<00:02, 198MB/s]model.safetensors:  10% 52.4M/548M [00:00<00:02, 247MB/s]model.safetensors:  17% 94.4M/548M [00:00<00:01, 317MB/s]model.safetensors:  25% 136M/548M [00:00<00:01, 341MB/s] model.safetensors:  33% 178M/548M [00:00<00:01, 357MB/s]model.safetensors:  40% 220M/548M [00:00<00:00, 367MB/s]model.safetensors:  48% 262M/548M [00:00<00:00, 376MB/s]model.safetensors:  55% 304M/548M [00:00<00:00, 383MB/s]model.safetensors:  63% 346M/548M [00:00<00:00, 384MB/s]model.safetensors:  71% 388M/548M [00:01<00:00, 383MB/s]model.safetensors:  78% 430M/548M [00:01<00:00, 373MB/s]model.safetensors:  86% 472M/548M [00:01<00:00, 371MB/s]model.safetensors:  94% 514M/548M [00:01<00:00, 374MB/s]model.safetensors: 100% 548M/548M [00:01<00:00, 361MB/s]
+generation_config.json:   0% 0.00/124 [00:00<?, ?B/s]generation_config.json: 100% 124/124 [00:00<00:00, 586kB/s]
+Downloading builder script:   0% 0.00/8.46k [00:00<?, ?B/s]Downloading builder script: 100% 8.46k/8.46k [00:00<00:00, 19.1MB/s]
+tokenizer_config.json:   0% 0.00/26.0 [00:00<?, ?B/s]tokenizer_config.json: 100% 26.0/26.0 [00:00<00:00, 137kB/s]
+config.json:   0% 0.00/665 [00:00<?, ?B/s]config.json: 100% 665/665 [00:00<00:00, 2.02MB/s]
+vocab.json:   0% 0.00/1.04M [00:00<?, ?B/s]vocab.json: 100% 1.04M/1.04M [00:00<00:00, 3.19MB/s]vocab.json: 100% 1.04M/1.04M [00:00<00:00, 3.18MB/s]
+merges.txt:   0% 0.00/456k [00:00<?, ?B/s]merges.txt: 100% 456k/456k [00:00<00:00, 1.87MB/s]merges.txt: 100% 456k/456k [00:00<00:00, 1.86MB/s]
+tokenizer.json:   0% 0.00/1.36M [00:00<?, ?B/s]tokenizer.json: 100% 1.36M/1.36M [00:00<00:00, 4.16MB/s]tokenizer.json: 100% 1.36M/1.36M [00:00<00:00, 4.14MB/s]
+/opt/conda/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Model device: cuda:0
+  0% 0/7 [00:00<?, ?it/s]True relation "before":   0% 0/7 [00:00<?, ?it/s]
+Examples:   0% 0/20 [00:00<?, ?it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:01,  3.54it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:01,  3.54it/s] [A[A
+
+Verbalized relation "overlaps":  14% 1/7 [00:00<00:01,  3.54it/s][A[A
+
+Verbalized relation "overlaps":  43% 3/7 [00:00<00:00,  7.38it/s][A[A
+
+Verbalized relation "starts":  43% 3/7 [00:00<00:00,  7.38it/s]  [A[A
+
+Verbalized relation "during":  43% 3/7 [00:00<00:00,  7.38it/s][A[A
+
+Verbalized relation "during":  71% 5/7 [00:00<00:00,  8.86it/s][A[A
+
+Verbalized relation "finishes":  71% 5/7 [00:00<00:00,  8.86it/s][A[A
+
+Verbalized relation "equals":  71% 5/7 [00:00<00:00,  8.86it/s]  [A[A
+
+Verbalized relation "equals": 100% 7/7 [00:00<00:00,  9.97it/s][A[A
+
+                                                               [A[A
+Examples:   5% 1/20 [00:00<00:15,  1.25it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.73it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.81it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.81it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.81it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.87it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.87it/s]  [A[A
+
+                                                               [A[A
+Examples:  10% 2/20 [00:01<00:12,  1.48it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.03it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.01it/s]  [A[A
+
+                                                               [A[A
+Examples:  15% 3/20 [00:01<00:10,  1.58it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.04it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.95it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.95it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.95it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.05it/s]  [A[A
+
+                                                               [A[A
+Examples:  20% 4/20 [00:02<00:09,  1.63it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.05it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.11it/s]  [A[A
+
+                                                               [A[A
+Examples:  25% 5/20 [00:03<00:09,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.03it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.03it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.03it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.01it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.01it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.01it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.38it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.38it/s]  [A[A
+
+                                                               [A[A
+Examples:  30% 6/20 [00:03<00:08,  1.65it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.09it/s]  [A[A
+
+                                                               [A[A
+Examples:  35% 7/20 [00:04<00:07,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.18it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.00it/s]  [A[A
+
+                                                               [A[A
+Examples:  40% 8/20 [00:04<00:07,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.88it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.88it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.88it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.80it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.80it/s]  [A[A
+
+                                                               [A[A
+Examples:  45% 9/20 [00:05<00:06,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.06it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.01it/s]  [A[A
+
+                                                               [A[A
+Examples:  50% 10/20 [00:06<00:05,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.03it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.98it/s]  [A[A
+
+                                                               [A[A
+Examples:  55% 11/20 [00:06<00:05,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.07it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.96it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.96it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.96it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.94it/s]  [A[A
+
+                                                               [A[A
+Examples:  60% 12/20 [00:07<00:04,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.27it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.27it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.27it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 10.31it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 10.31it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 10.31it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.99it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.99it/s]  [A[A
+
+                                                               [A[A
+Examples:  65% 13/20 [00:07<00:04,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.03it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.00it/s]  [A[A
+
+                                                               [A[A
+Examples:  70% 14/20 [00:08<00:03,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.82it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.82it/s] [A[A
+
+Verbalized relation "overlaps":  14% 1/7 [00:00<00:00,  9.82it/s][A[A
+
+Verbalized relation "overlaps":  43% 3/7 [00:00<00:00, 11.02it/s][A[A
+
+Verbalized relation "starts":  43% 3/7 [00:00<00:00, 11.02it/s]  [A[A
+
+Verbalized relation "during":  43% 3/7 [00:00<00:00, 11.02it/s][A[A
+
+Verbalized relation "during":  71% 5/7 [00:00<00:00, 11.65it/s][A[A
+
+Verbalized relation "finishes":  71% 5/7 [00:00<00:00, 11.65it/s][A[A
+
+Verbalized relation "equals":  71% 5/7 [00:00<00:00, 11.65it/s]  [A[A
+
+Verbalized relation "equals": 100% 7/7 [00:00<00:00, 11.80it/s][A[A
+
+                                                               [A[A
+Examples:  75% 15/20 [00:09<00:03,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.20it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.99it/s]  [A[A
+
+                                                               [A[A
+Examples:  80% 16/20 [00:09<00:02,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.04it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.08it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.08it/s]  [A[A
+
+                                                               [A[A
+Examples:  85% 17/20 [00:10<00:01,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.06it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.72it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.72it/s]  [A[A
+
+                                                               [A[A
+Examples:  90% 18/20 [00:10<00:01,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.09it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.93it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.93it/s]  [A[A
+
+                                                               [A[A
+Examples:  95% 19/20 [00:11<00:00,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.05it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.51it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.51it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.51it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.71it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.71it/s]  [A[A
+
+                                                               [A[A
+Examples: 100% 20/20 [00:12<00:00,  1.69it/s][A
+                                             [ATrue relation "before":  14% 1/7 [00:12<01:12, 12.04s/it]True relation "meets":  14% 1/7 [00:12<01:12, 12.04s/it] 
+Examples:   0% 0/20 [00:00<?, ?it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.77it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.77it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.77it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.49it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.49it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.49it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.76it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.76it/s]  [A[A
+
+                                                               [A[A
+Examples:   5% 1/20 [00:00<00:11,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.11it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.11it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.11it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.65it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.65it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.65it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.88it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.88it/s]  [A[A
+
+                                                               [A[A
+Examples:  10% 2/20 [00:01<00:10,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.24it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.09it/s]  [A[A
+
+                                                               [A[A
+Examples:  15% 3/20 [00:01<00:10,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.24it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.30it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.30it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.30it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.36it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.36it/s]  [A[A
+
+                                                               [A[A
+Examples:  20% 4/20 [00:02<00:09,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.67it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.68it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.68it/s]  [A[A
+
+                                                               [A[A
+Examples:  25% 5/20 [00:02<00:08,  1.71it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.17it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 10.82it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 10.82it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 10.82it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.58it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.58it/s]  [A[A
+
+                                                               [A[A
+Examples:  30% 6/20 [00:03<00:08,  1.64it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.10it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.11it/s]  [A[A
+
+                                                               [A[A
+Examples:  35% 7/20 [00:04<00:07,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.94it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.97it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.97it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.97it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.03it/s]  [A[A
+
+                                                               [A[A
+Examples:  40% 8/20 [00:04<00:07,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.07it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.69it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.69it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.69it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.90it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.90it/s]  [A[A
+
+                                                               [A[A
+Examples:  45% 9/20 [00:05<00:06,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.01it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.07it/s]  [A[A
+
+                                                               [A[A
+Examples:  50% 10/20 [00:05<00:05,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.99it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.93it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.93it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.93it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.86it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.86it/s]  [A[A
+
+                                                               [A[A
+Examples:  55% 11/20 [00:06<00:05,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.79it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.79it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.79it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.79it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.79it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.79it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.79it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.79it/s]  [A[A
+
+                                                               [A[A
+Examples:  60% 12/20 [00:07<00:04,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.82it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 10.87it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 10.87it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 10.87it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.78it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.78it/s]  [A[A
+
+                                                               [A[A
+Examples:  65% 13/20 [00:07<00:04,  1.64it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.03it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.04it/s]  [A[A
+
+                                                               [A[A
+Examples:  70% 14/20 [00:08<00:03,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.03it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.09it/s]  [A[A
+
+                                                               [A[A
+Examples:  75% 15/20 [00:08<00:02,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.10it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.80it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.80it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.80it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.69it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.69it/s]  [A[A
+
+                                                               [A[A
+Examples:  80% 16/20 [00:09<00:02,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.17it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.05it/s]  [A[A
+
+                                                               [A[A
+Examples:  85% 17/20 [00:10<00:01,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.20it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.06it/s]  [A[A
+
+                                                               [A[A
+Examples:  90% 18/20 [00:10<00:01,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.22it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.60it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.60it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.60it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.80it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.80it/s]  [A[A
+
+                                                               [A[A
+Examples:  95% 19/20 [00:11<00:00,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.99it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.02it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.02it/s]  [A[A
+
+                                                               [A[A
+Examples: 100% 20/20 [00:11<00:00,  1.63it/s][A
+                                             [ATrue relation "meets":  29% 2/7 [00:23<00:59, 11.99s/it]True relation "overlaps":  29% 2/7 [00:23<00:59, 11.99s/it]
+Examples:   0% 0/20 [00:00<?, ?it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.75it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.75it/s] [A[A
+
+Verbalized relation "overlaps":  14% 1/7 [00:00<00:00,  9.75it/s][A[A
+
+Verbalized relation "overlaps":  43% 3/7 [00:00<00:00, 10.94it/s][A[A
+
+Verbalized relation "starts":  43% 3/7 [00:00<00:00, 10.94it/s]  [A[A
+
+Verbalized relation "during":  43% 3/7 [00:00<00:00, 10.94it/s][A[A
+
+Verbalized relation "during":  71% 5/7 [00:00<00:00, 11.39it/s][A[A
+
+Verbalized relation "finishes":  71% 5/7 [00:00<00:00, 11.39it/s][A[A
+
+Verbalized relation "equals":  71% 5/7 [00:00<00:00, 11.39it/s]  [A[A
+
+Verbalized relation "equals": 100% 7/7 [00:00<00:00, 11.61it/s][A[A
+
+                                                               [A[A
+Examples:   5% 1/20 [00:00<00:11,  1.63it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.05it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.85it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.85it/s]  [A[A
+
+                                                               [A[A
+Examples:  10% 2/20 [00:01<00:10,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 10.33it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 10.33it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 10.33it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 10.12it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 10.12it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 10.12it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.69it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.69it/s]  [A[A
+
+                                                               [A[A
+Examples:  15% 3/20 [00:01<00:10,  1.61it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.46it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.46it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.46it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.90it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.90it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.90it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.06it/s]  [A[A
+
+                                                               [A[A
+Examples:  20% 4/20 [00:02<00:09,  1.65it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.24it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.16it/s]  [A[A
+
+                                                               [A[A
+Examples:  25% 5/20 [00:03<00:08,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.83it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.83it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.83it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.78it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.78it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.78it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.96it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.96it/s]  [A[A
+
+                                                               [A[A
+Examples:  30% 6/20 [00:03<00:08,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.17it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.10it/s]  [A[A
+
+                                                               [A[A
+Examples:  35% 7/20 [00:04<00:07,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.21it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.12it/s]  [A[A
+
+                                                               [A[A
+Examples:  40% 8/20 [00:04<00:07,  1.71it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.96it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.96it/s]  [A[A
+
+                                                               [A[A
+Examples:  45% 9/20 [00:05<00:06,  1.71it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.26it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.16it/s]  [A[A
+
+                                                               [A[A
+Examples:  50% 10/20 [00:05<00:05,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.17it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.24it/s]  [A[A
+
+                                                               [A[A
+Examples:  55% 11/20 [00:06<00:05,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.17it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.12it/s]  [A[A
+
+                                                               [A[A
+Examples:  60% 12/20 [00:07<00:04,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.11it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.11it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.11it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.58it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.58it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.58it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.78it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.78it/s]  [A[A
+
+                                                               [A[A
+Examples:  65% 13/20 [00:07<00:04,  1.71it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.31it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.31it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.31it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.23it/s]  [A[A
+
+                                                               [A[A
+Examples:  70% 14/20 [00:08<00:03,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.15it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.13it/s]  [A[A
+
+                                                               [A[A
+Examples:  75% 15/20 [00:08<00:02,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.28it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.15it/s]  [A[A
+
+                                                               [A[A
+Examples:  80% 16/20 [00:09<00:02,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.11it/s]  [A[A
+
+                                                               [A[A
+Examples:  85% 17/20 [00:09<00:01,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.18it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.20it/s]  [A[A
+
+                                                               [A[A
+Examples:  90% 18/20 [00:10<00:01,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.02it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.14it/s]  [A[A
+
+                                                               [A[A
+Examples:  95% 19/20 [00:11<00:00,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.57it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.57it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.57it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.89it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.89it/s]  [A[A
+
+                                                               [A[A
+Examples: 100% 20/20 [00:11<00:00,  1.72it/s][A
+                                             [ATrue relation "overlaps":  43% 3/7 [00:35<00:47, 11.86s/it]True relation "starts":  43% 3/7 [00:35<00:47, 11.86s/it]  
+Examples:   0% 0/20 [00:00<?, ?it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.27it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.32it/s]  [A[A
+
+                                                               [A[A
+Examples:   5% 1/20 [00:00<00:10,  1.75it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.16it/s]  [A[A
+
+                                                               [A[A
+Examples:  10% 2/20 [00:01<00:10,  1.74it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.02it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.02it/s]  [A[A
+
+                                                               [A[A
+Examples:  15% 3/20 [00:01<00:09,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.01it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.16it/s]  [A[A
+
+                                                               [A[A
+Examples:  20% 4/20 [00:02<00:09,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.15it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.07it/s]  [A[A
+
+                                                               [A[A
+Examples:  25% 5/20 [00:02<00:08,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.13it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.03it/s]  [A[A
+
+                                                               [A[A
+Examples:  30% 6/20 [00:03<00:08,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.06it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.12it/s]  [A[A
+
+                                                               [A[A
+Examples:  35% 7/20 [00:04<00:07,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.27it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.26it/s]  [A[A
+
+                                                               [A[A
+Examples:  40% 8/20 [00:04<00:06,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.27it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.17it/s]  [A[A
+
+                                                               [A[A
+Examples:  45% 9/20 [00:05<00:06,  1.74it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.28it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.51it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.51it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.51it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.98it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.98it/s]  [A[A
+
+                                                               [A[A
+Examples:  50% 10/20 [00:05<00:05,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.92it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.92it/s] [A[A
+
+Verbalized relation "overlaps":  14% 1/7 [00:00<00:00,  9.92it/s][A[A
+
+Verbalized relation "overlaps":  43% 3/7 [00:00<00:00, 11.40it/s][A[A
+
+Verbalized relation "starts":  43% 3/7 [00:00<00:00, 11.40it/s]  [A[A
+
+Verbalized relation "during":  43% 3/7 [00:00<00:00, 11.40it/s][A[A
+
+Verbalized relation "during":  71% 5/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "finishes":  71% 5/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "equals":  71% 5/7 [00:00<00:00, 11.82it/s]  [A[A
+
+Verbalized relation "equals": 100% 7/7 [00:00<00:00, 11.95it/s][A[A
+
+                                                               [A[A
+Examples:  55% 11/20 [00:06<00:05,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.15it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.09it/s]  [A[A
+
+                                                               [A[A
+Examples:  60% 12/20 [00:07<00:04,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.98it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.14it/s]  [A[A
+
+                                                               [A[A
+Examples:  65% 13/20 [00:07<00:04,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.93it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.93it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00,  9.92it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00,  9.92it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00,  9.92it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 10.86it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 10.86it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 10.86it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.48it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.48it/s]  [A[A
+
+                                                               [A[A
+Examples:  70% 14/20 [00:08<00:03,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.99it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.97it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.97it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.97it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.98it/s]  [A[A
+
+                                                               [A[A
+Examples:  75% 15/20 [00:08<00:02,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.33it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.22it/s]  [A[A
+
+                                                               [A[A
+Examples:  80% 16/20 [00:09<00:02,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.19it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 10.62it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 10.62it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 10.62it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.27it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.27it/s]  [A[A
+
+                                                               [A[A
+Examples:  85% 17/20 [00:10<00:01,  1.65it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.13it/s]  [A[A
+
+                                                               [A[A
+Examples:  90% 18/20 [00:10<00:01,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.25it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.15it/s]  [A[A
+
+                                                               [A[A
+Examples:  95% 19/20 [00:11<00:00,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.98it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.52it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.52it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.52it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.83it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.83it/s]  [A[A
+
+                                                               [A[A
+Examples: 100% 20/20 [00:11<00:00,  1.69it/s][A
+                                             [ATrue relation "starts":  57% 4/7 [00:47<00:35, 11.82s/it]True relation "during":  57% 4/7 [00:47<00:35, 11.82s/it]
+Examples:   0% 0/20 [00:00<?, ?it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.00it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.05it/s]  [A[A
+
+                                                               [A[A
+Examples:   5% 1/20 [00:00<00:11,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.26it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.22it/s]  [A[A
+
+                                                               [A[A
+Examples:  10% 2/20 [00:01<00:10,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.09it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.17it/s]  [A[A
+
+                                                               [A[A
+Examples:  15% 3/20 [00:01<00:09,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.11it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.06it/s]  [A[A
+
+                                                               [A[A
+Examples:  20% 4/20 [00:02<00:09,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.16it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.16it/s]  [A[A
+
+                                                               [A[A
+Examples:  25% 5/20 [00:02<00:08,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.24it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.17it/s]  [A[A
+
+                                                               [A[A
+Examples:  30% 6/20 [00:03<00:08,  1.71it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.32it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.32it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.25it/s]  [A[A
+
+                                                               [A[A
+Examples:  35% 7/20 [00:04<00:07,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.25it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.26it/s]  [A[A
+
+                                                               [A[A
+Examples:  40% 8/20 [00:04<00:06,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.23it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.18it/s]  [A[A
+
+                                                               [A[A
+Examples:  45% 9/20 [00:05<00:06,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.16it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.14it/s]  [A[A
+
+                                                               [A[A
+Examples:  50% 10/20 [00:05<00:05,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.01it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.01it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.01it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.63it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.63it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.63it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.84it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.84it/s]  [A[A
+
+                                                               [A[A
+Examples:  55% 11/20 [00:06<00:05,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.03it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.05it/s]  [A[A
+
+                                                               [A[A
+Examples:  60% 12/20 [00:06<00:04,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.13it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.21it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.25it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.25it/s]  [A[A
+
+                                                               [A[A
+Examples:  65% 13/20 [00:07<00:04,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.11it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.96it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.96it/s]  [A[A
+
+                                                               [A[A
+Examples:  70% 14/20 [00:08<00:03,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.02it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.09it/s]  [A[A
+
+                                                               [A[A
+Examples:  75% 15/20 [00:08<00:02,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.12it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.16it/s]  [A[A
+
+                                                               [A[A
+Examples:  80% 16/20 [00:09<00:02,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.13it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.58it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.58it/s]  [A[A
+
+                                                               [A[A
+Examples:  85% 17/20 [00:09<00:01,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.78it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.78it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00,  9.87it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00,  9.87it/s][A[A
+
+Verbalized relation "overlaps":  43% 3/7 [00:00<00:00,  9.87it/s][A[A
+
+Verbalized relation "starts":  43% 3/7 [00:00<00:00,  9.87it/s]  [A[A
+
+Verbalized relation "during":  43% 3/7 [00:00<00:00,  9.87it/s][A[A
+
+Verbalized relation "during":  71% 5/7 [00:00<00:00, 10.93it/s][A[A
+
+Verbalized relation "finishes":  71% 5/7 [00:00<00:00, 10.93it/s][A[A
+
+Verbalized relation "equals":  71% 5/7 [00:00<00:00, 10.93it/s]  [A[A
+
+Verbalized relation "equals": 100% 7/7 [00:00<00:00, 11.37it/s][A[A
+
+                                                               [A[A
+Examples:  90% 18/20 [00:10<00:01,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.24it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.10it/s]  [A[A
+
+                                                               [A[A
+Examples:  95% 19/20 [00:11<00:00,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.11it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.24it/s]  [A[A
+
+                                                               [A[A
+Examples: 100% 20/20 [00:11<00:00,  1.69it/s][A
+                                             [ATrue relation "during":  71% 5/7 [00:59<00:23, 11.77s/it]True relation "finishes":  71% 5/7 [00:59<00:23, 11.77s/it]
+Examples:   0% 0/20 [00:00<?, ?it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.67it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 10.57it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 10.57it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 10.57it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.55it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.55it/s]  [A[A
+
+                                                               [A[A
+Examples:   5% 1/20 [00:00<00:12,  1.55it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.26it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.05it/s]  [A[A
+
+                                                               [A[A
+Examples:  10% 2/20 [00:01<00:10,  1.65it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.01it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.00it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.03it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.03it/s]  [A[A
+
+                                                               [A[A
+Examples:  15% 3/20 [00:01<00:10,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.04it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.24it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.24it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.24it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.47it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.47it/s]  [A[A
+
+                                                               [A[A
+Examples:  20% 4/20 [00:02<00:09,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.24it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.29it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.29it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.29it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.26it/s]  [A[A
+
+                                                               [A[A
+Examples:  25% 5/20 [00:02<00:08,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.22it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.26it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.26it/s]  [A[A
+
+                                                               [A[A
+Examples:  30% 6/20 [00:03<00:08,  1.71it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.20it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.22it/s]  [A[A
+
+                                                               [A[A
+Examples:  35% 7/20 [00:04<00:07,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.93it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.93it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00,  9.84it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00,  9.84it/s][A[A
+
+Verbalized relation "overlaps":  43% 3/7 [00:00<00:00,  9.87it/s][A[A
+
+Verbalized relation "starts":  43% 3/7 [00:00<00:00,  9.87it/s]  [A[A
+
+Verbalized relation "during":  43% 3/7 [00:00<00:00,  9.87it/s][A[A
+
+Verbalized relation "during":  71% 5/7 [00:00<00:00, 10.00it/s][A[A
+
+Verbalized relation "finishes":  71% 5/7 [00:00<00:00, 10.00it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00,  9.94it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00,  9.94it/s]  [A[A
+
+                                                               [A[A
+Examples:  40% 8/20 [00:04<00:07,  1.62it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.15it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.82it/s]  [A[A
+
+                                                               [A[A
+Examples:  45% 9/20 [00:05<00:06,  1.64it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.11it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.76it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.76it/s]  [A[A
+
+                                                               [A[A
+Examples:  50% 10/20 [00:06<00:06,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.98it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.91it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.91it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.91it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.02it/s]  [A[A
+
+                                                               [A[A
+Examples:  55% 11/20 [00:06<00:05,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.17it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.12it/s]  [A[A
+
+                                                               [A[A
+Examples:  60% 12/20 [00:07<00:04,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.27it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.19it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.11it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.11it/s]  [A[A
+
+                                                               [A[A
+Examples:  65% 13/20 [00:07<00:04,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.99it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.02it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.02it/s]  [A[A
+
+                                                               [A[A
+Examples:  70% 14/20 [00:08<00:03,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 10.77it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 10.77it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 10.77it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.61it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.61it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.61it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.86it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.86it/s]  [A[A
+
+                                                               [A[A
+Examples:  75% 15/20 [00:08<00:03,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.15it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.10it/s]  [A[A
+
+                                                               [A[A
+Examples:  80% 16/20 [00:09<00:02,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.27it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.27it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.22it/s]  [A[A
+
+                                                               [A[A
+Examples:  85% 17/20 [00:10<00:01,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.89it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.89it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00,  9.82it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00,  9.82it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00,  9.82it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.02it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.02it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.02it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.53it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.53it/s]  [A[A
+
+                                                               [A[A
+Examples:  90% 18/20 [00:10<00:01,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.15it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.15it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.15it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.62it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.62it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.62it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.85it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.85it/s]  [A[A
+
+                                                               [A[A
+Examples:  95% 19/20 [00:11<00:00,  1.66it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.14it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.14it/s]  [A[A
+
+                                                               [A[A
+Examples: 100% 20/20 [00:11<00:00,  1.67it/s][A
+                                             [ATrue relation "finishes":  86% 6/7 [01:11<00:11, 11.84s/it]True relation "equals":  86% 6/7 [01:11<00:11, 11.84s/it]  
+Examples:   0% 0/20 [00:00<?, ?it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.35it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.35it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.35it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.28it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.28it/s]  [A[A
+
+                                                               [A[A
+Examples:   5% 1/20 [00:00<00:10,  1.76it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.23it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.23it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.85it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.85it/s]  [A[A
+
+                                                               [A[A
+Examples:  10% 2/20 [00:01<00:10,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":  14% 1/7 [00:00<00:00,  9.99it/s][A[A
+
+Verbalized relation "meets":  14% 1/7 [00:00<00:00,  9.99it/s] [A[A
+
+Verbalized relation "overlaps":  14% 1/7 [00:00<00:00,  9.99it/s][A[A
+
+Verbalized relation "overlaps":  43% 3/7 [00:00<00:00, 11.12it/s][A[A
+
+Verbalized relation "starts":  43% 3/7 [00:00<00:00, 11.12it/s]  [A[A
+
+Verbalized relation "during":  43% 3/7 [00:00<00:00, 11.12it/s][A[A
+
+Verbalized relation "during":  71% 5/7 [00:00<00:00, 11.55it/s][A[A
+
+Verbalized relation "finishes":  71% 5/7 [00:00<00:00, 11.55it/s][A[A
+
+Verbalized relation "equals":  71% 5/7 [00:00<00:00, 11.55it/s]  [A[A
+
+Verbalized relation "equals": 100% 7/7 [00:00<00:00, 11.78it/s][A[A
+
+                                                               [A[A
+Examples:  15% 3/20 [00:01<00:10,  1.68it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.13it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.18it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.67it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.67it/s]  [A[A
+
+                                                               [A[A
+Examples:  20% 4/20 [00:02<00:09,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.05it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.05it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.14it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.15it/s]  [A[A
+
+                                                               [A[A
+Examples:  25% 5/20 [00:02<00:08,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.88it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.88it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.88it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.98it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.02it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.02it/s]  [A[A
+
+                                                               [A[A
+Examples:  30% 6/20 [00:03<00:08,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.31it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.31it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.31it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.29it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.29it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.29it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.33it/s]  [A[A
+
+                                                               [A[A
+Examples:  35% 7/20 [00:04<00:07,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.76it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.76it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.76it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.15it/s]  [A[A
+
+                                                               [A[A
+Examples:  40% 8/20 [00:04<00:06,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.33it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.33it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.17it/s]  [A[A
+
+                                                               [A[A
+Examples:  45% 9/20 [00:05<00:06,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.10it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.10it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.06it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.13it/s]  [A[A
+
+                                                               [A[A
+Examples:  50% 10/20 [00:05<00:05,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.16it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.86it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.86it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.86it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.75it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.75it/s]  [A[A
+
+                                                               [A[A
+Examples:  55% 11/20 [00:06<00:05,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.08it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.08it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.08it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.07it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.15it/s]  [A[A
+
+                                                               [A[A
+Examples:  60% 12/20 [00:06<00:04,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.22it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.22it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.12it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.13it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.13it/s]  [A[A
+
+                                                               [A[A
+Examples:  65% 13/20 [00:07<00:04,  1.73it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.01it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.01it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.97it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.97it/s]  [A[A
+
+                                                               [A[A
+Examples:  70% 14/20 [00:08<00:03,  1.72it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.04it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.04it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.04it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.55it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.55it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.55it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.73it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.73it/s]  [A[A
+
+                                                               [A[A
+Examples:  75% 15/20 [00:08<00:02,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.95it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.95it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.95it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.82it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 10.90it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 10.90it/s]  [A[A
+
+                                                               [A[A
+Examples:  80% 16/20 [00:09<00:02,  1.67it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.16it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.17it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.24it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.24it/s]  [A[A
+
+                                                               [A[A
+Examples:  85% 17/20 [00:09<00:01,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.99it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.99it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.64it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.64it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.64it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 11.85it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 11.85it/s]  [A[A
+
+                                                               [A[A
+Examples:  90% 18/20 [00:10<00:01,  1.69it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 12.16it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 12.16it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 12.15it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.09it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.09it/s]  [A[A
+
+                                                               [A[A
+Examples:  95% 19/20 [00:11<00:00,  1.70it/s][A
+
+  0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "before":   0% 0/7 [00:00<?, ?it/s][A[A
+
+Verbalized relation "meets":   0% 0/7 [00:00<?, ?it/s] [A[A
+
+Verbalized relation "meets":  29% 2/7 [00:00<00:00, 11.65it/s][A[A
+
+Verbalized relation "overlaps":  29% 2/7 [00:00<00:00, 11.65it/s][A[A
+
+Verbalized relation "starts":  29% 2/7 [00:00<00:00, 11.65it/s]  [A[A
+
+Verbalized relation "starts":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "during":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  57% 4/7 [00:00<00:00, 11.94it/s][A[A
+
+Verbalized relation "finishes":  86% 6/7 [00:00<00:00, 12.04it/s][A[A
+
+Verbalized relation "equals":  86% 6/7 [00:00<00:00, 12.04it/s]  [A[A
+
+                                                               [A[A
+Examples: 100% 20/20 [00:11<00:00,  1.71it/s][A
+                                             [ATrue relation "equals": 100% 7/7 [01:22<00:00, 11.80s/it]                                                         confusion_matrix_counts={'before': {'before': 1, 'meets': 0, 'overlaps': 13, 'starts': 0, 'during': 0, 'finishes': 0, 'equals': 6}, 'meets': {'before': 2, 'meets': 0, 'overlaps': 13, 'starts': 0, 'during': 0, 'finishes': 0, 'equals': 5}, 'overlaps': {'before': 0, 'meets': 0, 'overlaps': 16, 'starts': 0, 'during': 1, 'finishes': 0, 'equals': 3}, 'starts': {'before': 1, 'meets': 0, 'overlaps': 11, 'starts': 3, 'during': 3, 'finishes': 0, 'equals': 2}, 'during': {'before': 0, 'meets': 0, 'overlaps': 11, 'starts': 2, 'during': 4, 'finishes': 0, 'equals': 3}, 'finishes': {'before': 1, 'meets': 0, 'overlaps': 11, 'starts': 1, 'during': 2, 'finishes': 0, 'equals': 5}, 'equals': {'before': 0, 'meets': 0, 'overlaps': 2, 'starts': 0, 'during': 2, 'finishes': 0, 'equals': 16}}

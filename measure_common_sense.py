@@ -1,5 +1,7 @@
 import fire
 import json
+import os
+from pathlib import Path
 from peft import LoraConfig, PeftModel, get_peft_model
 from transformers import (
     AutoModelForCausalLM,
@@ -54,10 +56,12 @@ def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False
         raise ValueError("Invalid language modeling mode")
     print(f"Model device: {model.device}")
 
-    data_filepath: str = "data/claude_examples.json"
+    data_filepath: Path = Path("data/claude_examples.json")
     model_name: str = model_id.split("/")[-1].replace(".", "-").lower()
-    confusion_matrix_counts_filepath = f"{model_name}_confusion_matrix_counts.json"
-    confusion_matrix_values_filepath = f"{model_name}_confusion_matrix_values.json"
+
+    confusion_matrix_dir = Path("confusion_matrices").mkdir(parents=True, exist_ok=True)
+    confusion_matrix_counts_filepath: Path = confusion_matrix_dir / f"{model_name}_confusion_matrix_counts.json"
+    confusion_matrix_values_filepath: Path = confusion_matrix_dir / f"{model_name}_confusion_matrix_values.json"
 
     with open(data_filepath) as f:
         data: dict[
@@ -97,13 +101,12 @@ def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False
                 verbalized_relation_metric_averages, key=verbalized_relation_metric_averages.get
             )
             confusion_matrix_counts[true_relation][predicted_relation] += 1
-        confusion_matrix_counts[true_relation] = confusions
 
     print(f"{confusion_matrix_counts=}")
     with open(confusion_matrix_counts_filepath, "w") as f:
         json.dump(confusion_matrix_counts, f)
 
-    print(f"{confusion_matrix_values=}")
+    #print(f"{confusion_matrix_values=}")
     with open(confusion_matrix_values_filepath, "w") as f:
         json.dump(confusion_matrix_values, f)
 
