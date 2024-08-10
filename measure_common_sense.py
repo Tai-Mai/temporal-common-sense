@@ -39,7 +39,6 @@ def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False
             torch_dtype=torch.bfloat16 if quantization else None,
             cache_dir="./cache",
         )
-        print(f"{model.device=}")
         metric: Metric = Perplexity(model=model)
     elif lm_mode == "masked":
         model_id = model_id or "roberta-base"
@@ -53,48 +52,60 @@ def main(lm_mode: str = "causal", model_id: str = "", quantization: bool = False
         metric: Metric = PseudoPerplexity(model=model)
     else:
         raise ValueError("Invalid language modeling mode")
+    print(f"Model device: {model.device}")
 
     data_filepath: str = "data/claude_examples.json"
     model_name: str = model_id.split("/")[-1].replace(".", "-").lower()
-    confusion_matrices_filepath = f"{model_name}_confusion_matrices.json"
+    confusion_matrix_counts_filepath = f"{model_name}_confusion_matrix_counts.json"
+    confusion_matrix_values_filepath = f"{model_name}_confusion_matrix_values.json"
 
     with open(data_filepath) as f:
         data: dict[
             Relation, dict[str, list[Verbalization] | list[dict[str, Event]]]
         ] = json.load(f)
 
-    confusion_matrices: dict[Relation, list[dict[Relation, Count]]] = {}
+    confusion_matrix_counts: dict[Relation, dict[Relation, Count]] = {
+        relation1: {relation2: 0 for relation2 in data} for relation1 in data
+    }
+    confusion_matrix_values: dict[Relation, dict[Relation, list[float]]] = {
+        relation1: {relation2: [] for relation2 in data} for relation1 in data
+    }
 
     true_relation_pbar = tqdm(data.items(), leave=False)
     for true_relation, true_relation_data in true_relation_pbar:
-        true_relation_pbar.set_description(f"True relation {true_relation}")
+        true_relation_pbar.set_description(f'True relation "{true_relation}"')
         # confusion matrix to count how often a certain relation scored best for a true relation
-        confusions: dict[Relation, Count] = {relation: 0 for relation in data}
 
         for example in tqdm(
             true_relation_data["examples"], desc="Examples", leave=False
         ):
             event1, event2 = example["event1"], example["event2"]
             # for the current event pair example, record the metric values of each possible relation
-            relation_metric_values: dict[Relation, float] = {}
             relation_pbar = tqdm(data.items(), leave=False)
-            for relation, relation_data in relation_pbar:
-                relation_pbar.set_description(f"Comparing relation {relation}")
+
+            verbalized_relation_metric_averages: dict[Relation, float] = {}
+            for verbalized_relation, relation_data in relation_pbar:
+                relation_pbar.set_description(f'Verbalized relation "{verbalized_relation}"')
                 verbalizations = [
                     verbalization.format(event1=event1, event2=event2)
                     for verbalization in relation_data["verbalizations"]
                 ]
-                metric_values: dict[str, list[float] | float] = metric(verbalizations)
-                relation_metric_values[relation] = metric_values["average"]
+                results: dict[str, list[float] | float] = metric(verbalizations)
+                confusion_matrix_values[true_relation][verbalized_relation] += results["values"]
+                verbalized_relation_metric_averages[verbalized_relation] = results["average"]
             predicted_relation: Relation = min(
-                relation_metric_values, key=relation_metric_values.get
+                verbalized_relation_metric_averages, key=verbalized_relation_metric_averages.get
             )
-            confusions[predicted_relation] += 1
-        confusion_matrices[true_relation] = confusions
+            confusion_matrix_counts[true_relation][predicted_relation] += 1
+        confusion_matrix_counts[true_relation] = confusions
 
-    print(confusion_matrices)
-    with open(confusion_matrices_filepath, "w") as f:
-        json.dump(confusion_matrices, f)
+    print(f"{confusion_matrix_counts=}")
+    with open(confusion_matrix_counts_filepath, "w") as f:
+        json.dump(confusion_matrix_counts, f)
+
+    print(f"{confusion_matrix_values=}")
+    with open(confusion_matrix_values_filepath, "w") as f:
+        json.dump(confusion_matrix_values, f)
 
 
 if __name__ == "__main__":
