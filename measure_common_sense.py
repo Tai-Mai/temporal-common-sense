@@ -133,13 +133,13 @@ def main(
 
                 if normalize:
                     values = [
-                        value - generic_value
+                        value / generic_value
                         for value, generic_value in zip(
                             values, generic_verbalization_values[verbalized_relation]
                         )
                     ]
                     average = (
-                        average - generic_verbalization_averages[verbalized_relation]
+                        average / generic_verbalization_averages[verbalized_relation]
                     )
 
                 confusion_matrix_values[true_relation][verbalized_relation] += values
