@@ -1,6 +1,8 @@
 bitsandbytes
 evaluate
 fire
+kaleido
 peft
+plotly
 torch
 transformers>=4.44
