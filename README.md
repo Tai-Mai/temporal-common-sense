@@ -17,11 +17,11 @@ The associated research report can be found in `./report`
 ### Docker
 This repository does not use `docker compose` since it it's not available on Google Cloud, which is what I was using to run this. Therefore, we run it using a `docker run` command that's saved in `./start_script.sh`
 1. Build the image
-  ```sh
+  ```bash
   $ docker build -t tcs .
   ```
 2. Make the run script executable
-  ```sh
+  ```bash
   $ chmod +x ./start_script.sh
   ```
 3. Edit `./start_script.sh`
@@ -39,7 +39,7 @@ This repository does not use `docker compose` since it it's not available on Goo
 
 ### Manually
 1. Install dependencies
-  ```sh
+  ```bash
   $ pip install -r requirements.txt
   ```
 2. Optional: Create an `.env` file and add the following line with your huggingface token. This is needed for gated models such as the Llama model family
@@ -47,7 +47,18 @@ This repository does not use `docker compose` since it it's not available on Goo
   HF_TOKEN=<your_token>
   ```
 3. Run the script
-  ```sh
+  ```bash
   $ python measure_common_sense.py --lm_mode causal --model_id meta-llama/Meta-Llama-3.1-8B
   ```
   * Or change the parameters as described above
+
+### Evaluation
+* Plot the confusion matrix heatmaps
+  ```bash
+  $ python plot_confusion_matrices.py path/to/<confusion_matrix_name>.json
+  ```
+  * PDF plot will be saved to `confusion_matrices/plots/<confusion_matrix_name>.pdf`
+* Calculate the correlation coefficients between graph hops and perplexity
+  ```bash
+  $ python correlation.py path/to/<confusion_matrix_name>.json
+  ```

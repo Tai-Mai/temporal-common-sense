@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Fedora 40)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+The style file: acl_natbib.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: references.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both volume and number fields in zhou2020evaluating
+You've used 7 entries,
+            3571 wiz_defined-function locations,
+            741 strings with 16306 characters,
+and the built_in function-call counts, 35036 in all, are:
+= -- 1491
+> -- 5074
+< -- 4
++ -- 1689
+- -- 1680
+* -- 3551
+:= -- 5606
+add.period$ -- 28
+call.type$ -- 7
+change.case$ -- 598
+chr.to.int$ -- 7
+cite$ -- 8
+duplicate$ -- 1944
+empty$ -- 896
+format.name$ -- 1697
+if$ -- 6445
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 606
+newline$ -- 38
+num.names$ -- 28
+pop$ -- 1218
+preamble$ -- 1
+purify$ -- 587
+quote$ -- 0
+skip$ -- 235
+stack$ -- 0
+substring$ -- 168
+swap$ -- 1243
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 63
+warning$ -- 1
+while$ -- 28
+width$ -- 0
+write$ -- 91
+(There was 1 warning)

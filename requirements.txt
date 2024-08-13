@@ -4,5 +4,7 @@ fire
 kaleido
 peft
 plotly
+scipy
+statsmodels
 torch
 transformers>=4.44
