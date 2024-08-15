@@ -123,10 +123,10 @@ def main(filepath: str, deltas: bool = False):
         y=perplexities,
         # trendline="ols",
         # marginal_x="histogram",
-        # marginal_y="histogram",
+        marginal_y="box",
         labels={
             "x": "Graph hops",
-            "y": f"Perplexity{' deltas' if deltas else ''}{' (normalized)' if 'normalized' in plot_name else ''}",
+            "y": f"{'Pseudo-p' if 'bert' in plot_name else 'P'}erplexity{' deltas' if deltas else ''}{' (normalized)' if 'normalized' in plot_name else ''}",
         },
         log_y=True,
     )

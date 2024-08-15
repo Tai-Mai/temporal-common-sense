@@ -1,6 +1,6 @@
 # Temporal Common Sense Testing of Pre-Trained Language Models
-This repository contains the code to test pre-trained language models for their common sense on Allen's interval algebra.
-The associated research report can be found in `./report`
+This repository contains the code and data to test pre-trained language models for their common sense on Allen's interval algebra.
+The associated research report can be found in [`./report/report.pdf`](https://github.com/Tai-Mai/temporal-common-sense/blob/main/report/report.pdf). The dataset can be found in [`./data/claude_examples.json`](https://github.com/Tai-Mai/temporal-common-sense/blob/main/data/claude_examples.json). 
 
 ## Options
 * `--model_id`: Set to the huggingface model id of the desired model. Tested examples:
@@ -22,7 +22,7 @@ This repository does not use `docker compose` since it it's not available on Goo
   ```
 2. Make the run script executable
   ```bash
-  $ chmod +x ./start_script.sh
+  $ chmod u+x ./start_script.sh
   ```
 3. Edit `./start_script.sh`
   * Change the `--model_id` to the desired model to test
@@ -62,3 +62,4 @@ This repository does not use `docker compose` since it it's not available on Goo
   ```bash
   $ python correlation.py path/to/<confusion_matrix_name>.json
   ```
+  * `--deltas`: Use perplexity deltas instead of absolute perplexity values

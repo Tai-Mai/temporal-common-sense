@@ -1,13 +1,28 @@
 # Fdb version 4
-["bibtex report"] 1723569773.29293 "report.aux" "report.bbl" "report" 1723569774.34729 0
+["bibtex report"] 1723653773.04917 "report.aux" "report.bbl" "report" 1723706722.29426 0
   "./acl_natbib.bst" 1723472079.87826 47709 d9d0ab22329e3318a3d1b2ae6abaab62 ""
-  "./references.bib" 1723554077.94391 12860 882ac7f80c479a7c6afdd213e856e403 ""
-  "report.aux" 1723569774.1399 6685 962612c5a3c616ce4fc5d7fd93ad661e "lualatex"
+  "./references.bib" 1723653772.19107 39674 60f6589ba4db657f4cc4c69f1c544889 ""
+  "report.aux" 1723706722.13052 19064 da2f2b79ff95182d4ed0482c2661a384 "lualatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["lualatex"] 1723569773.36629 "report.tex" "report.pdf" "report" 1723569774.34745 0
+["lualatex"] 1723706721.37605 "report.tex" "report.pdf" "report" 1723706722.2944 2
+  "../plots/gpt2_confusion_matrix_counts.pdf" 1723565047.27478 8666 c3eea9608e32b65ecbbbc67d939172de ""
+  "../plots/gpt2_confusion_matrix_counts_normalized.pdf" 1723565079.14608 8794 25c5569976825c2188faa05bcb2bd9ec ""
+  "../plots/gpt2_confusion_matrix_values.pdf" 1723618664.53175 10075 610796cc93aa9cb8e9544ed0285e6311 ""
+  "../plots/gpt2_confusion_matrix_values_correlation.pdf" 1723701971.85121 84972 917fcdaa70a66dab39a38182548c0b5d ""
+  "../plots/gpt2_confusion_matrix_values_normalized.pdf" 1723618659.14104 9743 09993c225e06fefd234eccf4dacf9145 ""
+  "../plots/meta-llama-3-1-8b_confusion_matrix_counts.pdf" 1723565102.94082 9040 f71631a2422559324c1841263e6aa65e ""
+  "../plots/meta-llama-3-1-8b_confusion_matrix_counts_normalized.pdf" 1723565110.20143 8777 59440a2f38f41c5a7dde12d1a67e56e4 ""
+  "../plots/meta-llama-3-1-8b_confusion_matrix_values.pdf" 1723618680.77589 10075 e370b7b20a42725a49e67f60aaf5bc7a ""
+  "../plots/meta-llama-3-1-8b_confusion_matrix_values_correlation.pdf" 1723702020.51058 78783 cdc8e77472097d78de7f91271147f076 ""
+  "../plots/meta-llama-3-1-8b_confusion_matrix_values_normalized.pdf" 1723618686.1846 9724 f713ebc47ff09402e279b5e0b3c8f499 ""
+  "../plots/roberta-base_confusion_matrix_counts.pdf" 1723565067.84069 8871 42ad44213cb6ef1ceab06f545e1e1181 ""
+  "../plots/roberta-base_confusion_matrix_counts_normalized.pdf" 1723565091.81241 8509 38cd516f7e2811dd1cdbdc32fe9bd38d ""
+  "../plots/roberta-base_confusion_matrix_values.pdf" 1723618636.80423 9949 3ef4f2fda0fe994d63e420c54931d5b0 ""
+  "../plots/roberta-base_confusion_matrix_values_correlation.pdf" 1723702229.20269 82256 f0c70a0df38ce736b69b72340f8dea17 ""
+  "../plots/roberta-base_confusion_matrix_values_normalized.pdf" 1723618649.42556 9768 b39c553de9cdc3aeab5e1c9909f16f96 ""
   "/home/tai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1717421834.98213 127322 7b3ec560cedc6cf6328543c6b83749ed ""
   "/home/tai/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1717423088.08145 319755 168abb7e9b1d497e5686a93b0cdbc5f2 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm" 1136768653 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -161,6 +176,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty" 1678653221 55778 14d5c99aa26410e440820bb9ea5b8b3a ""
   "/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty" 1678653221 71836 1a735454ad10692452eb2f2fc37f3865 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty" 1678653221 12462 ecf33913ce1e8012075d24e1f47f0d9b ""
   "/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1429144587 7068 06f8d141725d114847527a66439066b6 ""
   "/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def" 1663185836 21994 2bc2a882df92d97dbce35c06bb1d3541 ""
   "/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty" 1663185836 62761 3c92d495a9e03d7254b9a3266aa17164 ""
@@ -261,10 +277,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1717423059.87012 4602615 ac1019cb4c4ba39710c2cf7f752b378d ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1722503421 11867972 49819ed16f56aec2f6e96d82dd30865e ""
   "acl2023.sty" 1723472079.87826 11221 0cc89fa8e5891a5b6a48f16ecda8a85c ""
-  "report.aux" 1723569774.1399 6685 962612c5a3c616ce4fc5d7fd93ad661e "lualatex"
-  "report.bbl" 1723569773.35994 14129 4733efa40a44453c3795a6d139ed9e31 "bibtex report"
-  "report.out" 1723569773.92591 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "report.tex" 1723569771.81502 23638 44832d4a2253b5bb09b63b7c7d456ebd ""
+  "report.aux" 1723706722.13052 19064 da2f2b79ff95182d4ed0482c2661a384 "lualatex"
+  "report.bbl" 1723653773.21001 46115 795e419ebef0fe2adb712a474ea51a87 "bibtex report"
+  "report.out" 1723706721.85053 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "report.tex" 1723706721.14357 43600 47038ab66dce5d9fcdf3da3f14f62b36 ""
   (generated)
   "report.aux"
   "report.log"

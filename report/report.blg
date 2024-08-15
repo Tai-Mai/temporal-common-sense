@@ -7,47 +7,54 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
+Reallocated buffer (elt_size=1) to 40000 items from 20000.
+Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
+Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
+Reallocated out_buf (elt_size=1) to 40000 items from 20000.
+Reallocated name_tok (elt_size=4) to 40000 items from 20000.
+Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--can't use both volume and number fields in zhou2020evaluating
-You've used 7 entries,
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--can't use both volume and number fields in evaluating
+You've used 11 entries,
             3571 wiz_defined-function locations,
-            741 strings with 16306 characters,
-and the built_in function-call counts, 35036 in all, are:
-= -- 1491
-> -- 5074
-< -- 4
-+ -- 1689
-- -- 1680
-* -- 3551
-:= -- 5606
-add.period$ -- 28
-call.type$ -- 7
-change.case$ -- 598
-chr.to.int$ -- 7
-cite$ -- 8
-duplicate$ -- 1944
-empty$ -- 896
-format.name$ -- 1697
-if$ -- 6445
+            765 strings with 41220 characters,
+and the built_in function-call counts, 113048 in all, are:
+= -- 4420
+> -- 17309
+< -- 7
++ -- 5768
+- -- 5751
+* -- 11797
+:= -- 18118
+add.period$ -- 44
+call.type$ -- 11
+change.case$ -- 1977
+chr.to.int$ -- 11
+cite$ -- 12
+duplicate$ -- 6157
+empty$ -- 2429
+format.name$ -- 5784
+if$ -- 20488
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 606
-newline$ -- 38
-num.names$ -- 28
-pop$ -- 1218
+missing$ -- 1985
+newline$ -- 57
+num.names$ -- 44
+pop$ -- 3988
 preamble$ -- 1
-purify$ -- 587
+purify$ -- 1960
 quote$ -- 0
-skip$ -- 235
+skip$ -- 374
 stack$ -- 0
-substring$ -- 168
-swap$ -- 1243
-text.length$ -- 2
+substring$ -- 248
+swap$ -- 4019
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 63
+type$ -- 99
 warning$ -- 1
-while$ -- 28
+while$ -- 43
 width$ -- 0
-write$ -- 91
+write$ -- 141
 (There was 1 warning)

@@ -45,7 +45,7 @@ def main(filepath: str):
         x=relations,
         y=relations[::-1],
         annotation_text=annotations,
-        reversescale=True if "values" in plot_name else False,
+        # reversescale=True if "values" in plot_name else False,
     )
     for i in range(len(fig.layout.annotations)):
         fig.layout.annotations[i].font.size = 8 if "values" in plot_name else 20
